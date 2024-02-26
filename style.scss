@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+.content{
+    margin: 1em 7em 0 7em;
+}
+
+.content__head{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: white;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px; 
+    text-decoration: none;
+    display: flex;
+    align-items: center;  
+    color:black; 
+}
+
+nav a:hover {
+    color: red;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: hsl(36, 100%, 100%);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 -10px rgba(68, 45, 45, 0.1);
+    display: none;
+    flex-direction: column; 
+    align-items: flex-start ;
+    justify-content:flex-start;
+    border: 1px solid black;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.hideBar{
+    margin: 10% 0 20% 80%;
+}
+
+.hideBar:hover{
+    cursor: pointer;
+}
+
+.menuButton{
+    display: none;
+}
+
+
+.content__body{
+        margin-top: 2em;
+        &__top{
+            display: flex;
+            gap: 7em;
+    
+            &__left{
+    
+        
+                width: 117%;
+                .web-3-desktop-image{
+                    background-image: url(./assets/images/image-web-3-desktop.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 13em;
+      
+                }
+    
+                &__texts{
+                    display: flex;
+                    gap: 5.3em;
+                    margin-top: 1em;
+    
+                    h1{
+                        color:hsl(240, 100%, 5%) ;
+                        font-size: 2.8em;
+                        width: 40%;
+                        line-height: 1;
+                    }
+                    .dive-paragraph-and-button{
+                        width: 45%;
+                        font-size: 1em;
+                        margin-left:3em;
+                    }
+                button{
+                        padding: 1em;
+                        width: 45%;
+                        border: none;
+                        margin-top: 1.5em;
+                        background-color: hsl(5, 85%, 63%);
+                        color: #fff;
+                    }
+                }
+            }
+    
+            &__right{
+                width:65%;
+                background-color: hsl(240, 100%, 5%);
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+    
+                h2{
+                    color:  hsl(35, 77%, 62%);
+                    margin: 1em 0 ;
+                    text-align: center;
+                }
+    
+                a{
+                    font-weight: bolder;
+                    width: 70%;
+                    text-decoration: none;
+                    color:#fff;
+                    align-self: center;
+                }
+    
+                a:hover{
+                    color:  hsl(35, 77%, 62%);
+                }
+    
+                p{
+                    font-size: .7em;
+                    margin-top: 1em;
+                    text-align: left;
+                    color: lightgrey;
+                    width: 60%;
+                    margin: 1em 0 0 15%;
+                }
+                hr{
+                    margin: 1.5em 0
+    
+                }      
+            }
+        }
+    
+        &__bottom{
+            display: flex;
+            margin:1em 0;
+            gap:1.1em;
+    
+            &__01,
+            &__02,
+            &__03
+             {
+                display: flex;
+                gap: 2em;
+                width: 90%;
+    
+                .retro-image,
+                .laptops-image,
+                .gaming-image{
+                    height:100%;
+                    width:25%;
+                    margin-right: 0em;
+                    
+                }
+                &__texts{
+                    width: 65%;
+                    h4{
+                        color: grey;
+                        font-size: 2em;
+                    }
+                    a{
+                        margin: .3em 0;
+                        text-decoration: none;
+                        color: black;
+                        font-weight: bolder;
+                    }
+                    a:hover{
+                        color:red;
+                    }
+    
+                    p{
+                        color: grey;
+                        font-size: .9em;
+                    }
+    
+                }  
+            }
+            
+        }
+        
+    }
+    
+
+@media(max-width: 800px) {
+    body{
+        padding:.8em .9em 2em .9em;
+    }
+
+    .content__body{
+        &__top{
+            flex-direction: column;
+            width: 100%;
+            gap:3em;
+
+            &__left{
+                width: 100%;
+
+                .web-3-desktop-image{
+                    background-image: url(./assets/images/image-web-3-mobile.jpg);
+                }
+
+                &__texts{
+                    flex-direction: column;
+                    gap: 1em;
+
+                    h1{
+                        width: 100%;
+                    }
+                    .dive-paragraph-and-button{
+                        margin: 0;
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__right{
+                width: 100%;
+                padding-bottom: 2em;
+                margin-bottom: 1.5em;
+            }
+        }
+
+        &__bottom{
+            flex-direction: column;
+        }
+    }
+
+
+    .hideOnMobile{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+}
+
+@media(max-width: 500px) {
+    .content{
+        margin: 0;
+    }
+    .sidebar{
+        width: 100%;
+    }
+}
+

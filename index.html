@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+
+ 
+</head>
+<body>
+  <main class="content">
+        <div class="content__head"> 
+            <img src="./assets/images/logo.svg" alt="" class="logo-image">
+
+            <nav>
+              <!-- <img src="./assets/images/logo.svg" alt="" class="logo-image"> -->
+              <ul class="sidebar">
+                  <img src="./assets/images/icon-menu-close.svg" onclick="hideSideBar()" class="hideBar">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">New</a></li>
+                  <li><a href="#">Popular</a></li>
+                  <li><a href="#">Trending</a></li>
+                  <li><a href="#">Categories</a></li>
+              </ul>
+              <ul class="nobar">
+                  <li class="hideOnMobile"><a href="#">Home</a></li>
+                  <li class="hideOnMobile"><a href="#">New</a></li>
+                  <li class="hideOnMobile"><a href="#">Popular</a></li>
+                  <li class="hideOnMobile"><a href="#">Trending</a></li>
+                  <li class="hideOnMobile"><a href="#">Categories</a></li>
+                  <li class="menuButton" onclick="showSideBar()"><a href="#"><svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg></a></li>
+              </ul>
+            </nav>
+        </div>
+
+
+           <div class="content__body">
+               <div class="content__body__top">
+                       <div class="content__body__top__left">
+                            <div class="web-3-desktop-image"></div>
+                            <div class="content__body__top__left__texts">
+                                   <h1>The Bright Future of Web 3.0?</h1>
+                                   <div class="dive-paragraph-and-button">
+                                    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                                      But is it really fulfilling its promise?</p>
+                                    <a href="#"><button>READ MORE</button></a>
+                                   </div>
+                                  
+                            </div>
+                      
+                        </div><!--end of content__body__top__left -->
+                        <div class="content__body__top__right">
+                          <h2>New</h2>
+                          <a href="#">Hydrogen VS Electric Cars</a >
+                          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                          <hr>
+                          <a href="#">The Downsides of AI Artistry</a>
+                          <p> What are the possible adverse effects of on-demand AI image generation?</p>
+                          <hr>
+                          <a href="#">Is VC Funding Drying Up?</a>
+                          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                        </div>
+      </div>
+
+            <div class="content__body__bottom">
+
+                  <div class="content__body__bottom__01">
+                        <img src="./assets/images/image-retro-pcs.jpg" alt="" class="retro-image">
+                        <div class="content__body__bottom__01__texts">
+                        <h4>01</h4>
+                        <a href="#">Retro PCs</a>
+                        <p>What happens when old PCs are given modern upgrades?</p>
+                        </div>
+                  </div>
+
+                  <div class="content__body__bottom__02">
+                          <img src="./assets/images/image-top-laptops.jpg" alt="" class="laptops-image">
+                          <div class="content__body__bottom__02__texts">
+                          <h4>02</h4>
+                          <a href="#">Top 10 Laptops of 2022</a>
+                          <p>Our best picks for various needs and budgets.</p>
+                          </div>
+                  </div>
+
+                  <div class="content__body__bottom__03">
+                            <img src="./assets/images/image-gaming-growth.jpg" alt="" class="gaming-image">
+                          <div class="content__body__bottom__03__texts">
+                            <h4>03</h4>
+                            <a href="#">Growth of Gaming</a>
+                            <p>How the pandemic has sparked fresh opportunities.</p>
+                            </div>
+                  </div>
+
+                  </div>
+            </div>
+          </div>
+
+</main>
+
+      <script src="main.js"></script> 
+</body>
+
+</html>
